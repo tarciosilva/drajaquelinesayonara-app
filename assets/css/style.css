@@ -39,12 +39,12 @@ footer {
 }
 
 [data-bs-theme="dark"] {
-    color: #FFF;
+    color:  var(--logo-pallete--7);
     .nav-link, .card-body, .offcanvas, .accordion, .btn {
-      --bs-navbar-active-color: #FFF;
-      --bs-card-color: #FFF;
-      --bs-offcanvas-color: #FFF;
-      --bs-body-color: #FFF;
+      --bs-navbar-active-color: var(--logo-pallete--7);
+      --bs-card-color:  var(--logo-pallete--7);
+      --bs-offcanvas-color:  var(--logo-pallete--7);
+      --bs-body-color:  var(--logo-pallete--7);
     }
   }
 .nav-bar {
@@ -55,7 +55,7 @@ footer {
     max-width: 150px;
 }
 .banner-about {
-    background: center / cover no-repeat url("../img/bg_site.png") fixed;
+    background: center / cover no-repeat url("../img/banner_site.svg") fixed;
     height: 300px;
 }
 .banner-about-titulo  {
@@ -132,10 +132,9 @@ footer {
     max-width: 8rem;
 }
 .fixed-buttom__link > span {
-    color:  var(--logo-palette--1);
-    filter: drop-shadow(1px 1px 1px var(--logo-palette--3));
     font-size: 1.5rem;
     font-weight: 600;
+    filter: brightness(10%);
 }
 
 @keyframes pulse {
@@ -156,7 +155,7 @@ footer {
         max-height: 85px;
     }
     .banner-about {
-        background: center / cover no-repeat url("../img/bg_site.png");
+        background: center / cover no-repeat url("../img/banner_site.svg");
         height: 400px;
     }
   }
