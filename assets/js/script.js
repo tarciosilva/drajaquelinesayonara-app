@@ -14,3 +14,18 @@ switcher.addEventListener('click', () => {
     mode.setAttribute('data-bs-theme', check);
 })
 
+
+function animateTitle() {
+    const title = document.title; // Obtém o título atual
+    let index = 0;
+
+    // Crie um intervalo para alterar o título a cada 500 milissegundos
+    setInterval(() => {
+        index = (index + 1) % title.length;
+        const animatedTitle = title.slice(index) + title.slice(0, index);
+        document.title = animatedTitle;
+    }, 300);
+}
+
+// Chame a função para iniciar a animação
+animateTitle();
