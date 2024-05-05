@@ -22,7 +22,7 @@ html, body {
 
 
 header {
-    margin-bottom: 85px;
+    margin-bottom: 90px;
 }
 
 a {
@@ -56,6 +56,20 @@ footer {
 .logo-js {
     max-width: 150px;
 }
+.img_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.img_cover {
+    backdrop-filter: blur(5px);
+    background-color: var(--logo-palette--glass);
+    height: 150px;
+    position: absolute;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+}
+
 .banner-about {
     background: center / cover no-repeat url("../img/banner_site.svg") fixed;
     height: 300px;
@@ -173,7 +187,7 @@ footer {
 }
 @media only screen and (min-width: 1280px) {
     header {
-        margin-bottom: 132px;
+        margin-bottom: 150px;
     }
     .logo-js {
         max-width: 250px;
