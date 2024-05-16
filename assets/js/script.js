@@ -1,3 +1,6 @@
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const mode = document.querySelector('body');
 const switcher = document.getElementById('flexSwitchCheckDefault');
 const navbarBackGround = document.querySelector('[data-navbar]');
