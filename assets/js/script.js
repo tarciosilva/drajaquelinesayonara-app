@@ -1,7 +1,4 @@
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
-injectSpeedInsights();
 
 const mode = document.querySelector('body');
 const switcher = document.getElementById('flexSwitchCheckDefault');
