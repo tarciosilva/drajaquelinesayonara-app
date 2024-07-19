@@ -22,7 +22,7 @@ html, body {
 
 
 header {
-    margin-bottom: 90px;
+    margin-bottom: 65px;
 }
 
 a {
@@ -187,7 +187,7 @@ footer {
 }
 @media only screen and (min-width: 1280px) {
     header {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
     .logo-js {
         max-width: 250px;
