@@ -1,1 +1,0 @@
-#dra jaqueline sayonara / app
