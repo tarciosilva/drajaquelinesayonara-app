@@ -25,9 +25,10 @@ export default tseslint.config(
       ],
     },
     rules: {
-      quotes: ["error", "double"],
-      curly: 2,
-      semi: ["error", "always"],
+      "quotes": ["error", "double"],
+      "curly": 2,
+      "semi": ["error", "always"],
+      "no-unused-vars": "warn"
     },
   }
 );
