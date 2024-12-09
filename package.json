@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "drajaquelinesaqyonara_app": "file:",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "styled-components": "^6.1.13"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

@@ -1,20 +1,22 @@
 import { createGlobalStyle } from "styled-components";
 
-// import GandhSansRegular from './fonts/GandhiSans-Regular.otf';
-// import GandhSansBold from './fonts/GandhiSans-Bold.otf';
+import JuliusSansOne from "./fonts/JuliusSansOne-Regular.ttf";
 
 export const GloabalStyle = createGlobalStyle`
 
-/* @font-face {
-	font-family: 'GandhSansRegular';
-	src: local('Gandh Sans Regular'), local('GandhSansRegular'), url($"{GandhSansRegular});
+:root{
+  font-size: 62.5%;
+  --golden-pink-light: #fff2f5;
+  --golden-pink-dark: #7b3638;
+  --golden-pink-medium: #bc7a7c;
 }
-@font-face {
-	font-family: 'GandhSansBold';
-	src: local('Gandh Sans Bold'), local('GandhSansBold'), url($"{GandhSansBold});
-} */
 
-/* 1. Use a more-intuitive box-sizing model */
+ @font-face {
+	font-family: 'JuliusSansOne';
+	src: local('Julius Sans One'), local('JuliusSansOne'), url(${JuliusSansOne});
+}
+  
+ 
 *, *::before, *::after {
   box-sizing: border-box;
 }
