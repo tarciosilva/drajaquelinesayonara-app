@@ -27,6 +27,7 @@ export const GloabalStyle = createGlobalStyle`
 }
 
 body {
+  font-family: "JuliusSansOne", sans-serif;
   /* 3. Add accessible line-height */
   line-height: 1.5;
   /* 4. Improve text rendering */
@@ -56,12 +57,27 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
-
+a {
+  color: var(--golden-pink-light);
+  text-decoration: none;
+  transition: color .5s ease-in-out;
+}
+a:hover {
+  color: var(--golden-pink-medium);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 /*
   9. Create a root stacking context
 */
 #root, #__next {
   isolation: isolate;
+}
+
+.menu__nav__active {
+    overflow: hidden;
 }
 
 `;
