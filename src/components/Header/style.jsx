@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import backGroundImage from "./img/header_back.webp";
-import { Link } from "react-router";
 
 export const Wrapper = styled.header`
   background: center / cover no-repeat url(${backGroundImage});
@@ -62,26 +61,4 @@ export const Text = styled.p`
   padding: 0.5rem;
   text-align: center;
 `;
-export const AppointmentButton = styled(Link)`
-  all: initial;
-  background-color: var(--golden-pink-light);
-  border-radius: 10px;
-  box-shadow: 1px 2px 5px var(--golden-pink-medium);
-  cursor: pointer;
-  padding: 0.75rem;
-  transition: background .5s ease-in-out;
-  &:hover {
-    transform: scale(1.25);
-  }
-  &:active {
-    transform: scale(1);
-  }
-  &:focus {
-    background-color: var(--golden-pink-medium);
-    box-shadow: 1px 2px 5px var(--golden-pink-light);
-  }
-`;
-export const AppointmentButtonText = styled.p`
-  color: var(--golden-pink-dark);
-  font-size: 1rem;
-`;
+

@@ -6,6 +6,7 @@ import symbol from "../../assets/logo_symbol.webp";
 import { HamburguerButton } from "../HamburguerButton";
 import { Offcanva } from "../NavBar/OffCanva";
 import { socialLinks } from "../../common";
+import { Button } from "./../Button";
 
 export const Header = () => {
   return (
@@ -23,13 +24,13 @@ export const Header = () => {
             <S.Text>
               Nossa missão é promover saúde e autoestima para nossos pacientes.
             </S.Text>
-            <S.AppointmentButton to={socialLinks[2].link}>
-              <S.AppointmentButtonText>
-                Agende uma consulta
-              </S.AppointmentButtonText>
-            </S.AppointmentButton>
+            <Button link={socialLinks[2].link}>Agende uma consulta</Button>
           </S.ContainerLeftContent>
-          <S.Picture src={photoMobile} alt="Dra Jaqueline Sayonara s photo" width="60%"/>
+          <S.Picture
+            src={photoMobile}
+            alt="Dra Jaqueline Sayonara s photo"
+            width="60%"
+          />
         </S.Container>
       </S.Wrapper>
     </>
