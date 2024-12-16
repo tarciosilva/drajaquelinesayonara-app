@@ -1,11 +1,18 @@
 import { GloabalStyle } from "../global/GlobalStyle";
-import { Header } from "../components";
+import { Header, About } from "../components";
+import { RecoilRoot } from "recoil";
+import { BrowserRouter } from "react-router";
 
 function App() {
   return (
     <>
-      <GloabalStyle />
-      <Header />
+      <BrowserRouter>
+        <RecoilRoot>
+          <GloabalStyle />
+          <Header />
+          <About />
+        </RecoilRoot>
+      </BrowserRouter>
     </>
   );
 }

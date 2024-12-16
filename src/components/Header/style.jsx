@@ -1,57 +1,87 @@
 import styled from "styled-components";
 import backGroundImage from "./img/header_back.webp";
+import { Link } from "react-router";
 
 export const Wrapper = styled.header`
   background: center / cover no-repeat url(${backGroundImage});
   justify-content: center;
   display: flex;
-  height: 100vh;
+  height: 500px;
   padding: 5px;
   width: 100%;
 `;
 export const ContainerTop = styled.div`
+  background-color: var(--golden-pink-light);
   display: flex;
   justify-items: center;
   justify-content: space-between;
+  padding: 0.75rem 0;
   position: absolute;
+  top: 0;
+  width: 100%;
 `;
 export const OverLay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-color: var(--golden-pink-light);
-  opacity: .9;
+  opacity: 0.9;
 `;
 export const Logo = styled.img`
   width: 50%;
 `;
 export const Container = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin: 15% auto auto auto;
-    padding: 0.5rem 0.5rem 0 0;
-    position: absolute;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15% auto auto auto;
+  padding: 0.5rem 0.5rem 0 0;
+  position: absolute;
+  width: 100%;
 `;
 export const Picture = styled.img`
-    width: 55%;
+  
 `;
 export const ContainerLeftContent = styled.div`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
 `;
 export const Symbol = styled.img`
-    margin: 20px 0 10px 0;
-    height: 200px;
-    width: 100px;
+  margin: 0 0 10px 0;
+  height: 150px;
+  width: 70px;
 `;
 export const Text = styled.p`
-    color: var(--golden-pink-dark);
-    font-family: "JuliusSansOne", sans-serif;
-    font-size: 2rem;
-    text-align: center;
+  color: var(--golden-pink-dark);
+  font-family: "JuliusSansOne", sans-serif;
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  text-align: center;
+`;
+export const AppointmentButton = styled(Link)`
+  all: initial;
+  background-color: var(--golden-pink-light);
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px var(--golden-pink-medium);
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: background .5s ease-in-out;
+  &:hover {
+    transform: scale(1.25);
+  }
+  &:active {
+    transform: scale(1);
+  }
+  &:focus {
+    background-color: var(--golden-pink-medium);
+    box-shadow: 1px 2px 5px var(--golden-pink-light);
+  }
+`;
+export const AppointmentButtonText = styled.p`
+  color: var(--golden-pink-dark);
+  font-size: 1rem;
 `;

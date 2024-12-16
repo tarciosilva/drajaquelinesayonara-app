@@ -75,9 +75,4 @@ ul {
 #root, #__next {
   isolation: isolate;
 }
-
-.menu__nav__active {
-    overflow: hidden;
-}
-
 `;
