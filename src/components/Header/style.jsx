@@ -14,7 +14,7 @@ export const ContainerTop = styled.div`
   display: flex;
   justify-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  padding: 0.75rem 0 2rem 0;
   position: absolute;
   top: 0;
   width: 100%;
@@ -29,6 +29,7 @@ export const OverLay = styled.div`
   opacity: 0.9;
 `;
 export const Logo = styled.img`
+  aspect-ratio: auto;
   width: 50%;
 `;
 export const Container = styled.div`
@@ -39,14 +40,13 @@ export const Container = styled.div`
   position: absolute;
   width: 100%;
 `;
-export const Picture = styled.img`
-  
-`;
+export const Picture = styled.img``;
 export const ContainerLeftContent = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 50px;
   width: 40%;
 `;
 export const Symbol = styled.img`
@@ -61,4 +61,3 @@ export const Text = styled.p`
   padding: 0.5rem;
   text-align: center;
 `;
-
