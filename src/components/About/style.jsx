@@ -5,14 +5,11 @@ export const Wrapper = styled.section`
   align-items: center;
   background: center / cover no-repeat url(${symbol});
   border-radius: 20px 20px 0 0;
-  border-top: 2px solid var(--golden-pink-dark);
+  border-top: 1px solid var(--golden-pink-dark);
   display: flex;
   justify-content: center;
   position: absolute;
-  
   margin-top: -10px;
-
-
   width: 100%;
 `;
 export const ContainerText = styled.article`
@@ -21,11 +18,10 @@ export const ContainerText = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   height: 260px;
   gap: 1rem;
   padding-right: 1rem;
-  text-align: justify;
   width: 50%;
 `;
 

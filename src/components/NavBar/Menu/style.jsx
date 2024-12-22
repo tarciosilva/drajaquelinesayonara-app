@@ -5,6 +5,7 @@ export const Wrapper = styled.nav`
   color: var(--golden-pink-light);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 1.5rem;
 `;
 export const NavLink = styled(Link)`
@@ -13,7 +14,8 @@ export const NavLink = styled(Link)`
   display: flex;
   font-size: 1.75rem;
   gap: 1rem;
-  margin: 1rem 0;
+  justify-content: start;
+  margin: 1.5rem 0;
 
   &:hover {
     color: var(--golden-pink-medium);
@@ -24,7 +26,10 @@ export const NavLink = styled(Link)`
   }
 `;
 export const NavIcon = styled.img`
-    &:hover {
-        background-color: var(--golden-pink-medium);
-    }
+  &:hover {
+    background-color: var(--golden-pink-medium);
+  }
+`;
+export const NavText = styled.p`
+  margin: 0;
 `;

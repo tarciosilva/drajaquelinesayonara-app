@@ -1,9 +1,9 @@
 import * as S from "./style";
 
-export const Title = ({ children }) => {
+export const Title = ({ children, padding }) => {
   return (
     <>
-      <S.Text>{children}</S.Text>
+      <S.Text $padding={padding} >{children}</S.Text>
     </>
   );
 };

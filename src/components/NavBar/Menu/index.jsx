@@ -22,7 +22,7 @@ export const Menu = () => {
                 alt={`Link para ${item.text}`}
                 width="24px"
               />
-              <p>{item.text}</p>
+              <S.NavText>{item.text}</S.NavText>
             </S.NavLink>
           ))}
         </ul>

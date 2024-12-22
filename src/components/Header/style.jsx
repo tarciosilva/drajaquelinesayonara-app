@@ -51,7 +51,7 @@ export const ContainerLeftContent = styled.div`
 `;
 export const Symbol = styled.img`
   margin: 0 0 10px 0;
-  height: 150px;
+  height: 130px;
   width: 70px;
 `;
 export const Text = styled.p`
