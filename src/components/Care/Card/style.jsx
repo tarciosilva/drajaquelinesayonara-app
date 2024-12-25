@@ -11,6 +11,5 @@ export const Wrapper = styled.div`
     width: 100px;
 `;
 export const CardText = styled.p`
-    color: var(--golden-pink-dark);
     margin: 0;
 `;

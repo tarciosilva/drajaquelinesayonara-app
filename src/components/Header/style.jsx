@@ -55,8 +55,6 @@ export const Symbol = styled.img`
   width: 70px;
 `;
 export const Text = styled.p`
-  color: var(--golden-pink-dark);
-  font-family: "JuliusSansOne", sans-serif;
   font-size: 1.7rem;
   padding: 0.5rem;
   text-align: center;

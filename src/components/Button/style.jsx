@@ -16,7 +16,6 @@ export const Button = styled(Link)`
   }
   `;
 export const ButtonText = styled.p`
-  color: var(--golden-pink-dark);
   font-size: 1rem;
   margin: auto 0;
   padding: auto 0;

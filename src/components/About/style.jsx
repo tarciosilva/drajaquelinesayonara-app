@@ -14,7 +14,6 @@ export const Wrapper = styled.section`
 `;
 export const ContainerText = styled.article`
   background-color: #fff2f5c6;
-  color: var(--golden-pink-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -47,6 +47,7 @@ input, button, textarea, select {
 
 /* 7. Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
+  color: var(--golden-pink-dark);
   overflow-wrap: break-word;
 }
 
