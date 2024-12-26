@@ -1,5 +1,12 @@
 import { GloabalStyle } from "../global/GlobalStyle";
-import { Header, About, Company, Care, Conveniencies } from "../components";
+import {
+  Header,
+  About,
+  Company,
+  Care,
+  Conveniencies,
+  Gallery
+} from "../components";
 import { RecoilRoot } from "recoil";
 import { BrowserRouter } from "react-router";
 
@@ -14,6 +21,7 @@ function App() {
           <Company />
           <Care />
           <Conveniencies />
+          <Gallery />
         </RecoilRoot>
       </BrowserRouter>
     </>

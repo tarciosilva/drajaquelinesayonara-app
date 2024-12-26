@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router";
 
 export const Wrapper = styled.nav`
-  color: var(--golden-pink-light);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,5 +31,6 @@ export const NavIcon = styled.img`
   }
 `;
 export const NavText = styled.p`
+  color: var(--golden-pink-light);
   margin: 0;
 `;

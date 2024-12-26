@@ -1,8 +1,5 @@
-import photo1 from "./img/1.png";
-import photo2 from "./img/2.png";
-import photo3 from "./img/3.png";
 
-export const Carousel = () => {
+export const Carousel = ({photo1, photo2, photo3}) => {
   return (
     <>
       <div id="carouselExampleCaptions" className="carousel slide">
