@@ -5,7 +5,8 @@ import {
   Company,
   Care,
   Conveniencies,
-  Gallery
+  Gallery,
+  Rating
 } from "../components";
 import { RecoilRoot } from "recoil";
 import { BrowserRouter } from "react-router";
@@ -22,6 +23,7 @@ function App() {
           <Care />
           <Conveniencies />
           <Gallery />
+          <Rating />
         </RecoilRoot>
       </BrowserRouter>
     </>

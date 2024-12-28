@@ -1,7 +1,6 @@
 import * as S from "./style";
 
 export const Card = ({ icon, text }) => {
-  console.log(icon);
   return (
     <>
       <S.Wrapper>
