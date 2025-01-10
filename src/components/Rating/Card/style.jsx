@@ -5,6 +5,7 @@ export const ContainerCard = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    width: 100%;
 `;
 export const Photo = styled.img`
     border: 4px solid #fff;
@@ -18,7 +19,9 @@ export const ContainerContent = styled.article`
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    height: 150px;
+    
     margin-top: -12.5%;
     padding: 12.5% 2rem 1rem 2rem;
-    width: 100%;
+    width: 300px;
 `;
