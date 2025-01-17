@@ -6,7 +6,7 @@ import { Title } from "./../Title";
 export const About = () => {
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper id="about">
         <S.ContainerText>
           <Title>A Profissional</Title>
           <p>

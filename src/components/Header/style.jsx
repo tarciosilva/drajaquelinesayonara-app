@@ -14,10 +14,12 @@ export const ContainerTop = styled.div`
   display: flex;
   justify-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0 2rem 0;
-  position: absolute;
+  padding: 0.75rem 0 1rem 0;
+  position: fixed;
+  opacity: .9;
   top: 0;
   width: 100%;
+  z-index: 1000;
 `;
 export const OverLay = styled.div`
   position: absolute;

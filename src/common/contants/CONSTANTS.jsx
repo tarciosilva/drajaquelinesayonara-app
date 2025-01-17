@@ -13,37 +13,37 @@ export const navItens = [
   {
     text: "INÍCIO",
     icon: homeIcon,
-    link: ""
+    link: "#home"
   },
   {
     text: "SOBRE",
     icon: aboutIcon,
-    link: ""
+    link: "#about"
   },
   {
     text: "NOSSA CLÍNICA",
     icon: placeIcon,
-    link: ""
+    link: "#company"
   },
   {
     text: "TRATAMENTOS",
     icon: caretIcon,
-    link: ""
+    link: "#care"
   },
   {
     text: "COMODIDADES",
     icon: confotabletIcon,
-    link: ""
+    link: "#conveniencies"
   },
   {
     text: "AVALIAÇÕES",
     icon: ratingIcon,
-    link: ""
+    link: "#rating"
   },
   {
     text: "LOCALIZAÇÃO",
     icon: locationIcon,
-    link: ""
+    link: "#map"
   }
 ];
 export const socialLinks = [

@@ -16,7 +16,7 @@ export const Menu = () => {
       <S.Wrapper>
         <ul>
           {navItens.map((item) => (
-            <S.NavLink key={item.icon} onClick={onLinkClick}>
+            <S.NavLink key={item.icon} onClick={onLinkClick} href={item.link}>
               <S.NavIcon
                 src={item.icon}
                 alt={`Link para ${item.text}`}

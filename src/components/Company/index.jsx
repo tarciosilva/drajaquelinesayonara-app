@@ -37,7 +37,7 @@ export const Company = () => {
 
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper id="company">
         <S.ContainerTitle>
           <Title>Nosso Espaço</Title>
         </S.ContainerTitle>

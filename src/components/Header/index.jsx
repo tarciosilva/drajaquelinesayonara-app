@@ -11,11 +11,11 @@ import { Button } from "./../Button";
 export const Header = () => {
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper id="home">
         <S.OverLay />
         <Offcanva />
         <S.ContainerTop>
-          <S.Logo src={logo} alt="Brand logo" />
+          <S.Logo src={logo} alt="newest logo" />
           <HamburguerButton />
         </S.ContainerTop>
         <S.Container>

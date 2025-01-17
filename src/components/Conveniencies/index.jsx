@@ -25,7 +25,7 @@ export const Conveniencies = () => {
   ];
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper id="conveniencies">
         <Title padding="2rem">O que oferecemos</Title>
         <S.ContainerConveniencies>
           {conveniencies.map((convenience) => (

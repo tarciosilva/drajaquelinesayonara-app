@@ -12,9 +12,9 @@ export const Rating = () => {
 
   const [reviews, setReviews] = useState([]);
 
-  useEffect(( ) => {
-    setReviews(rates);
-  }, []);
+  // useEffect(( ) => {
+  //   setReviews(rates);
+  // }, []);
 
   const rating =
     reviews.length !== 0
@@ -43,7 +43,7 @@ export const Rating = () => {
 
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper id="rating">
         <Title padding={"2rem"}>Avaliações</Title>
         <Carousel id={uuidv4()} elements={rating} />
       </S.Wrapper>

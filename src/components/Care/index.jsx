@@ -56,7 +56,7 @@ export const Care = () => {
 
   return (
     <>
-      <S.Wrapper>
+      <S.Wrapper id="care">
         <Title padding="2rem">Tratamentos</Title>
         <S.ContainerCards className="container text-center">
           <div className="row p-2">

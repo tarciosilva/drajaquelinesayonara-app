@@ -8,7 +8,7 @@ export const Wrapper = styled.nav`
   justify-content: center;
   padding: 0 1.5rem;
 `;
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   align-items: center;
   cursor: pointer;
   display: flex;
