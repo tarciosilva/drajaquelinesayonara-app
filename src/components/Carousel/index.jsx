@@ -1,10 +1,9 @@
-import { Card } from "../Rating/Card";
 
 export const Carousel = ({ id, elements }) => {
-  let count = 0;
+  
   return (
     <>
-      <div id={id} className="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div id={id} className="carousel slide" data-bs-ride="carousel">
         
         <div className="carousel-inner">
           {elements.map((element) => (
@@ -12,7 +11,7 @@ export const Carousel = ({ id, elements }) => {
               className={`carousel-item ${element.active}`}
               key={element.key}
             >
-              {element?.photo ? (
+              {!element?.card ? (
                 <img
                   src={element.photo}
                   className="d-block w-100"
@@ -20,12 +19,7 @@ export const Carousel = ({ id, elements }) => {
                 />
               ) : (
                 <div className="container-sm text-center">
-                  <Card
-                    photo={element.photoURI}
-                    name={element.name}
-                    ratingDescription={element.ratingDescription}
-                    rating={element.rate}
-                  />
+                  {element.card}
                 </div>
               )}
               <div className="carousel-caption d-none d-md-block">

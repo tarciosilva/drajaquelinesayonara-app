@@ -6,12 +6,16 @@ import {
   Care,
   Conveniencies,
   Gallery,
-  Rating
+  Rating,
+  Map,
+  Footer
 } from "../components";
 import { RecoilRoot } from "recoil";
 import { BrowserRouter } from "react-router";
 
+
 function App() {
+  
   return (
     <>
       <BrowserRouter>
@@ -24,6 +28,8 @@ function App() {
           <Conveniencies />
           <Gallery />
           <Rating />
+          <Map />
+          <Footer />
         </RecoilRoot>
       </BrowserRouter>
     </>

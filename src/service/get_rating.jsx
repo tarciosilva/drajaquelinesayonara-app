@@ -1,13 +1,18 @@
+import axios from "axios";
+
+const API_KEY = import.meta.env.VITE_MAPS_API_KEY;
+
 async function getRating() {
-  const { Place } = await google.maps.importLibrary("places");
-  const place = new Place({
-    id: "ChIJG2ynEABZrAcRE0WvmWTIAgk"
+  const Rates  = axios({
+    method: "get",
+    url: `https://places.googleapis.com/v1/places/ChIJG2ynEABZrAcRE0WvmWTIAgk?fields=reviews,displayName&key=${API_KEY}`
+  }).then(function (response) {
+    return response.data.reviews;
   });
 
-  await place.fetchFields({
-    fields: ["reviews"]
-  });
-  return place.reviews;
+  return Rates;
+
 }
 
 export default getRating;
+

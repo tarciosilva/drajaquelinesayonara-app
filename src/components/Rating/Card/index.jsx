@@ -1,25 +1,34 @@
 import * as S from "./style";
-import ReactStars from "react-rating-stars-component";
+import skeletonIMG from "./img/profile.webp";
+import { useState } from "react";
+import { StarRating } from "../StarRating";
 
-export const Card = ({photo, name, ratingDescription, rating}) => {
+export const Card = ({ photo, name, ratingDescription, rating, skeleton }) => {
+  const [imageLoaded, setImageLoaded] = useState(skeletonIMG);
+
   return (
     <>
-      <S.ContainerCard>
-        <S.Photo src={photo} />
-        <S.ContainerContent>
-          <span>{name}</span>
-          <ReactStars
-            count={5}
-            size={24}
-            activeColor="#ffd700"
-            classNames="StarRating"
-            isHalf
-            value={rating}
-            edit={false}
-          />
-          <p>
-            {ratingDescription}
-          </p>
+      <S.ContainerCard $skeleton={skeleton}>
+        <S.Photo
+          src={imageLoaded}
+          $skeleton={skeleton}
+          onLoad={() => setImageLoaded(photo || skeletonIMG)}
+        />
+        <S.ContainerContent $skeleton={skeleton}>
+          <span>
+            {name || <S.SkeletonText $height={"15px"} $width={"100px"} />}
+          </span>
+          <S.ContainerStars>
+            <StarRating 
+              size={"24px"}
+              value={rating || 0}
+            />
+          </S.ContainerStars>
+          {name ? (
+            <p>{ratingDescription}</p>
+          ) : (
+            <S.SkeletonText $height={"30px"} $width={"200px"} />
+          )}
         </S.ContainerContent>
       </S.ContainerCard>
     </>
