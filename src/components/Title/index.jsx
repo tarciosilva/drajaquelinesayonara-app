@@ -1,9 +1,11 @@
 import * as S from "./style";
 
-export const Title = ({ children, padding }) => {
+export const Title = ({ children, top, right, botton, left }) => {
   return (
     <>
-      <S.Text $padding={padding} >{children}</S.Text>
+      <S.Text $top={top} $right={right} $botton={botton} $left={left}>
+        {children}
+      </S.Text>
     </>
   );
 };

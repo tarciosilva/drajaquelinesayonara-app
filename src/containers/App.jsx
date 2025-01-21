@@ -27,8 +27,8 @@ function App() {
           <Care />
           <Conveniencies />
           <Gallery />
-          <Rating />
           <Map />
+          <Rating />
           <Footer />
         </RecoilRoot>
       </BrowserRouter>

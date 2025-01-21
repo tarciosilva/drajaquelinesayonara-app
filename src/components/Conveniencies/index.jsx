@@ -26,7 +26,7 @@ export const Conveniencies = () => {
   return (
     <>
       <S.Wrapper id="conveniencies">
-        <Title padding="2rem">O que oferecemos</Title>
+        <Title left="2rem">O que oferecemos</Title>
         <S.ContainerConveniencies>
           {conveniencies.map((convenience) => (
             <S.Conveniencie key={convenience.key}>

@@ -10,14 +10,16 @@ export const Wrapper = styled.header`
   width: 100%;
 `;
 export const ContainerTop = styled.div`
+  align-items: center;
   background-color: var(--golden-pink-light);
   display: flex;
   justify-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0 1rem 0;
+  padding-top: 0.75rem;
   position: fixed;
-  opacity: .9;
+  opacity: 0.9;
   top: 0;
+  transition: all .5s ease-in;
   width: 100%;
   z-index: 1000;
 `;
@@ -31,26 +33,31 @@ export const OverLay = styled.div`
   opacity: 0.9;
 `;
 export const Logo = styled.img`
-  aspect-ratio: auto;
-  width: 50%;
+  margin-left: 6px;
+  max-width: 200px;
 `;
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 15% auto auto auto;
   padding: 0.5rem 0.5rem 0 0;
-  position: absolute;
+  
   width: 100%;
+  z-index: 3;
 `;
-export const Picture = styled.img``;
 export const ContainerLeftContent = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 50%;
   width: 40%;
 `;
+export const Picture = styled.img`
+  aspect-ratio: 1/1;
+`;
+
+
 export const Symbol = styled.img`
   margin: 0 0 10px 0;
   height: 130px;

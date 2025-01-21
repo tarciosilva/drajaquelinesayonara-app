@@ -44,7 +44,7 @@ export const Rating = () => {
   return (
     <>
       <S.Wrapper id="rating">
-        <Title padding={"2rem"}>Avaliações</Title>
+        <Title left={"2rem"} top="2rem">Avaliações</Title>
         <Carousel id={uuidv4()} elements={rating} />
       </S.Wrapper>
     </>

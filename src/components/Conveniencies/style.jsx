@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   background-color: var(--golden-pink-light);
-  margin-top: 950px;
+  margin-top: 1000px;
   padding: 1rem 0;
   position: absolute;
   width: 100%;

@@ -39,7 +39,7 @@ export const Company = () => {
     <>
       <S.Wrapper id="company">
         <S.ContainerTitle>
-          <Title>Nosso Espaço</Title>
+          <Title botton="1rem">Nosso Espaço</Title>
         </S.ContainerTitle>
         <Carousel id={id} elements={cards} />
       </S.Wrapper>

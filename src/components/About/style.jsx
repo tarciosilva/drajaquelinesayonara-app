@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import symbol from "./img/symbol_about_background.webp";
 
 export const Wrapper = styled.section`
   align-items: center;
-  background: center / cover no-repeat url(${symbol});
+  background-color: #fff;
   border-radius: 20px 20px 0 0;
   border-top: 1px solid var(--golden-pink-dark);
   display: flex;
@@ -11,9 +10,9 @@ export const Wrapper = styled.section`
   position: absolute;
   margin-top: -10px;
   width: 100%;
+  z-index: 4;
 `;
 export const ContainerText = styled.article`
-  background-color: #fff2f5c6;
   display: flex;
   flex-direction: column;
   justify-content: center;

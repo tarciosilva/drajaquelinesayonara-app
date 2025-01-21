@@ -57,7 +57,7 @@ export const Care = () => {
   return (
     <>
       <S.Wrapper id="care">
-        <Title padding="2rem">Tratamentos</Title>
+        <Title left="2rem">Tratamentos</Title>
         <S.ContainerCards className="container text-center">
           <div className="row p-2">
             {care.map((care) => (

@@ -18,7 +18,9 @@ export const About = () => {
         <S.Photo>
           <img src={aboutPhoto} alt="" width="100%" />
         </S.Photo>
+        
       </S.Wrapper>
+      
     </>
   );
 };

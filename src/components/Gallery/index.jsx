@@ -37,7 +37,7 @@ export const Gallery = () => {
   return (
     <>
       <S.Wrapper>
-        <Title padding="2rem">Galeria de resultados</Title>
+        <Title left="2rem" botton="1rem">Galeria de resultados</Title>
         <Carousel id={id} elements={cards} />
       </S.Wrapper>
     </>

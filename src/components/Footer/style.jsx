@@ -8,7 +8,7 @@ export const Wrappper = styled.footer`
     flex-direction: column;
     padding: 2rem;
     position: absolute;
-    margin-top: calc(450px + 2rem);
+    
     text-align: center;
     width: 100%;
 `;

@@ -1,6 +1,5 @@
 import * as S from "./style";
-import logo from "../../assets/logo_js_2025.webp";
-
+import logoDefault from "../../assets/logo_horizontal.webp";
 import photoMobile from "./img/header_picture_mobile.webp";
 import symbol from "../../assets/logo_symbol.webp";
 import { HamburguerButton } from "../HamburguerButton";
@@ -15,7 +14,7 @@ export const Header = () => {
         <S.OverLay />
         <Offcanva />
         <S.ContainerTop>
-          <S.Logo src={logo} alt="newest logo" />
+          <S.Logo src={logoDefault} alt="newest logo" />
           <HamburguerButton />
         </S.ContainerTop>
         <S.Container>
@@ -26,11 +25,13 @@ export const Header = () => {
             </S.Text>
             <Button link={socialLinks[2].link}>Agende uma consulta</Button>
           </S.ContainerLeftContent>
-          <S.Picture
-            src={photoMobile}
-            alt="Dra Jaqueline Sayonara s photo"
-            width="60%"
-          />
+          <div className="container w-75 m-0 p-0">
+            <S.Picture
+              src={photoMobile}
+              alt="Dra Jaqueline Sayonara s photo"
+              
+            />
+          </div>
         </S.Container>
       </S.Wrapper>
     </>

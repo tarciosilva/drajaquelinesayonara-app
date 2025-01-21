@@ -36,14 +36,14 @@ export const navItens = [
     link: "#conveniencies"
   },
   {
-    text: "AVALIAÇÕES",
-    icon: ratingIcon,
-    link: "#rating"
-  },
-  {
     text: "LOCALIZAÇÃO",
     icon: locationIcon,
     link: "#map"
+  },
+  {
+    text: "AVALIAÇÕES",
+    icon: ratingIcon,
+    link: "#rating"
   }
 ];
 export const socialLinks = [
