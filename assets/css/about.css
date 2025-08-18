@@ -1,0 +1,45 @@
+.about-container div section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.about-container div > h2,
+p {
+  margin: 0;
+}
+.about-container div section > img {
+  width: 240px;
+}
+.about-container div section > p {
+  margin-top: 16px;
+  padding: 16px;
+}
+
+@media screen and (min-device-width: 1200px) {
+  .about-container {
+    justify-content: center;
+    display: flex;
+    margin-top: 192px;
+  }
+  .about-container div {
+    width: 70%;
+  }
+  .about-container div section {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+  .about-container div > h2 {
+    font-size: 4rem;
+  }
+  .about-container div section > img {
+    width: 480px;
+  }
+  .about-container div section > p {
+    font-size: 3rem;
+    margin: 0;
+    width: 400px;
+  }
+}

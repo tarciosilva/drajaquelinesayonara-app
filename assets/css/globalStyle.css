@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root {
+  font-size: 62.5%;
+  --logo-pallete-petal-rose: #fae7eb;
+  --logo-pallete-velvety-cherry: #a25356;
+  --logo-pallete-light: #fff;
+  --logo-pallete--dark: #000;
+}
+
+body {
+  color: var(--logo-pallete-velvety-cherry);
+  font-family: "Manrope";
+  font-size: 1.5rem;
+}
+p {
+  color: var(--logo-pallete-velvety-cherry);
+}
+
+main section {
+  margin-top: 24px;
+  padding: 0 24px;
+}

@@ -1,0 +1,80 @@
+.offcanva {
+  background-color: var(--logo-pallete-petal-rose);
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto; /*rolagem autmoática */
+  padding: 0;
+  position: fixed;
+  top: 0;
+  transition: 0.5s ease-out;
+  width: 100%;
+  z-index: 1000;
+}
+ul {
+  list-style: none;
+  padding: 24px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.offcanva {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.offcanva img {
+  margin: 16px;
+  width: 96px;
+}
+.offcanva-nav--social {
+  width: 100%;
+}
+.offcanva-nav--social ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.offcanva-nav--social li a img {
+  width: 24px;
+}
+
+.offcanva-nav {
+  width: 100%;
+}
+.offcanva-nav ul a {
+  align-items: center;
+  display: flex;
+  padding-bottom: 16px;
+}
+.offcanva-nav ul li img {
+  margin: 0 4px 0 0;
+
+  width: 24px;
+}
+.offcanva-nav ul li p {
+  margin: 0;
+}
+
+.accssebility-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 96px;
+}
+
+.accssebility-buttons div {
+  display: flex;
+}
+.accssebility-buttons li > button {
+  all: initial;
+}
+.accssebility-buttons li > button img {
+  margin: 0;
+  width: 24px;
+}
+
+@media screen and (min-device-width: 1200px) {
+  .offcanva {
+    display: none;
+  }
+}
