@@ -1,3 +1,17 @@
+.about-container {
+  background-color: #fff;
+  background-image: linear-gradient(135deg, #fae7eb 25%, transparent 25%),
+    linear-gradient(225deg, #fae7eb 25%, transparent 25%),
+    linear-gradient(45deg, #fae7eb 25%, transparent 25%),
+    linear-gradient(315deg, #fae7eb 25%, #fff 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin-top: -8px;
+  padding: 24px;
+}
+
 .about-container div section {
   align-items: center;
   display: flex;
@@ -17,29 +31,23 @@ p {
 
 @media screen and (min-device-width: 1200px) {
   .about-container {
-    justify-content: center;
     display: flex;
-    margin-top: 192px;
+    justify-content: center;
+    margin-top: 332px;
+    padding-top: 48px;
   }
-  .about-container div {
-    width: 70%;
-  }
+  
   .about-container div section {
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: center;
-    margin: 0 auto;
-    width: 70%;
+    justify-content: center; 
   }
-  .about-container div > h2 {
-    font-size: 4rem;
-  }
+  
   .about-container div section > img {
-    width: 480px;
+    width: 50%;
   }
-  .about-container div section > p {
-    font-size: 3rem;
+  .about-container div section p.about-description {
     margin: 0;
-    width: 400px;
+    width: 50%;
   }
 }

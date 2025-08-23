@@ -1,0 +1,39 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.card-container {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #aaaaaa89;
+  width: 380px;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+.card-description {
+  background-color: var(--logo-pallete-petal-rose);
+  padding: 16px;
+}
+.card-description h3 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+@media screen and (min-device-width: 1200px) {
+  .cards-container {
+    gap: 24px;
+  }
+  .card-container {
+    width: 30%;
+  }
+  
+  .card-description h3 {
+  font-size: 2rem;
+}
+  .card-description p {
+  font-size: 1.5rem;
+}
+}

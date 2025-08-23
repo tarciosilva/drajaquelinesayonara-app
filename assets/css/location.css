@@ -1,0 +1,31 @@
+.location-container {
+  margin-bottom: 24px;
+}
+
+
+.location-container > div div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.location-container > div iframe {
+  width: 100%;
+  height: 300px;
+}
+.location-container > div img {
+  width: 100%;
+}
+
+@media screen and (min-device-width: 1200px) {
+  .location-container > div div {
+    flex-direction: row-reverse;
+    gap: 8px;
+  }
+
+  .location-container > div iframe {
+    width: calc(60% - 4px);
+    height: 500px;
+  }
+  .location-container > div img {
+    width: calc(40% - 4px);
+  }
+}

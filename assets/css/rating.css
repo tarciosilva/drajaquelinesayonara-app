@@ -1,0 +1,16 @@
+
+.rating-stars {
+   text-align: center;
+}
+
+.rating-stars .star {
+    color: darkgoldenrod;
+    font-size: 3rem;
+}
+
+@media screen and (min-device-width: 1200px) {
+    .item .card-container {
+        width: 100%;
+    }
+}
+
