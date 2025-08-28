@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyDBBBLdU6T0me66qborCmUL7TUjxbl0-C0";
+const API_KEY = "";
 
 async function getData() {
   const url = `https://places.googleapis.com/v1/places/ChIJG2ynEABZrAcRE0WvmWTIAgk?fields=reviews,displayName&key=${API_KEY}`;
