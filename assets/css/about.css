@@ -1,5 +1,4 @@
 .about-container {
-  background-color: #fff;
   background-image: linear-gradient(135deg, #fae7eb 25%, transparent 25%),
     linear-gradient(225deg, #fae7eb 25%, transparent 25%),
     linear-gradient(45deg, #fae7eb 25%, transparent 25%),
@@ -8,7 +7,7 @@
   background-size: 20px 20px;
   background-repeat: repeat;
   background-attachment: fixed;
-  margin-top: -8px;
+  margin: 0;
   padding: 24px;
 }
 
@@ -33,7 +32,6 @@ p {
   .about-container {
     display: flex;
     justify-content: center;
-    margin-top: 332px;
     padding-top: 48px;
   }
   
@@ -44,9 +42,10 @@ p {
   }
   
   .about-container div section > img {
-    width: 50%;
+    width: 600px;
   }
   .about-container div section p.about-description {
+    font-size: 3.5rem;
     margin: 0;
     width: 50%;
   }

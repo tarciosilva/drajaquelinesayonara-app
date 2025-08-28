@@ -1,11 +1,11 @@
 header {
   height: 100vh;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 }
 .header-nav {
   align-items: center;
-  background-color: var(--logo-pallete-petal-rose);
+  background-color: #fae7ebd8;
   display: flex;
   gap: 32px;
   height: 40px;
@@ -64,7 +64,6 @@ div.logo-container div.logo > img {
 div.logo-container .slogan {
   font-size: 20px;
   font-weight: 600;
-  margin-top: -16px;
 }
 
 section .banner-image-container {
@@ -78,20 +77,39 @@ section .banner-image-container > img {
   width: 100%;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 1199px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 1199px) {
+  header {
+    height: 100%;
+  }
   .header-nav ul {
     display: none;
   }
 }
+@media only screen and (min-device-width: 433px) and (max-device-width: 1199px) {
+  section .banner-image-container > img {
+    max-width: 200px;
+  }
+}
 
 @media screen and (min-device-width: 1200px) {
+  header {
+    height: initial;
+  }
   .header-nav {
     justify-content: center;
   }
   .header-nav ul {
     display: flex;
   }
-  .header-nav ul li p{
+  .header-nav .header-link > p {
+    padding: 16px;
+  }
+   .header-nav .header-link > p:hover {
+    background-color: #a25356;
+    color: #fae7eb;
+    transition: all .5s ease-in-out;
+  }
+  .header-nav ul li p {
     font-size: large;
   }
 
@@ -105,5 +123,8 @@ section .banner-image-container > img {
 
   section .banner-image-container > img {
     width: 500px;
+  }
+  div.logo-container .slogan {
+    margin-top: 16px;
   }
 }

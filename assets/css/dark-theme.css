@@ -1,0 +1,35 @@
+.dark-theme {
+  background-color: var(--logo-pallete-velvety-cherry);
+}
+.dark-theme p,
+h3 {
+  color: var(--logo-pallete-petal-rose);
+}
+.dark-theme .section-title {
+  color: var(--logo-pallete-petal-rose);
+}
+.dark-theme .care-title {
+  color: var(--logo-pallete-petal-rose);
+}
+.dark-theme > header > nav.header-nav {
+  background-color: #000000ac;
+}
+.dark-theme > header .offcanva {
+  background-color: #3c1e1fef;
+}
+.dark-theme > header > section .banner-image-container {
+  background-color: #0000009a;
+}
+
+.dark-theme > main section.about-container {
+  background-image: none;
+  background-color: #3c1e1f;
+}
+.dark-theme > footer {
+  background-image: none;
+  background-color: #3c1e1f;
+}
+
+.dark-theme > main section.about-container div section p.about-description {
+  color: #fae7eb;
+}

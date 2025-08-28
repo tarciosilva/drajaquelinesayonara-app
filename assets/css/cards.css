@@ -5,9 +5,16 @@
   gap: 16px;
 }
 .card-container {
+  
   border-radius: 10px;
   box-shadow: 1px 1px 5px 1px #aaaaaa89;
   width: 380px;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
 .card img {
@@ -15,10 +22,10 @@
   width: 100%;
 }
 .card-description {
-  background-color: var(--logo-pallete-petal-rose);
   padding: 16px;
 }
 .card-description h3 {
+  font-size: 2rem;
   margin: 0;
   margin-bottom: 8px;
 }
@@ -29,11 +36,14 @@
   .card-container {
     width: 30%;
   }
+  .card img {
+  height: 300px;
+}
   
   .card-description h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
   .card-description p {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
 }
 }

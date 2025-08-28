@@ -11,7 +11,7 @@
   width: 100%;
   height: 300px;
 }
-.location-container > div img {
+.location-container > div video {
   width: 100%;
 }
 
@@ -25,7 +25,8 @@
     width: calc(60% - 4px);
     height: 500px;
   }
-  .location-container > div img {
+  .location-container > div video {
+    height: 500px;
     width: calc(40% - 4px);
   }
 }

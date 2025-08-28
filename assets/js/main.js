@@ -1,7 +1,14 @@
 const hamburgerButton = document.getElementById("hamburger-button");
 const offCanva = document.getElementById("offcanva");
 
-hamburgerButton.addEventListener("click", () => {
+hamburgerButton.addEventListener("click", toggleNav);
+
+const navLinks = document.querySelectorAll(".offcanva-nav--link");
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", toggleNav);
+});
+
+function toggleNav() {
   const isActive = hamburgerButton.classList.contains("is-active");
 
   if (isActive) {
@@ -11,11 +18,35 @@ hamburgerButton.addEventListener("click", () => {
     hamburgerButton.classList.add("is-active");
     offCanva.style.left = "0";
   }
-});
+}
 
+const body = document.querySelector("body");
+const darkModeButton = document.getElementById("dark-mode-button");
 
+darkModeButton.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+})
 
+// const rating = await getData();
+// const userContainer = document.getElementById("user-container");
 
-
-
-
+// rating.reviews.map((review) => {
+//   userContainer.innerHTML += `
+    
+//                     <div class="user-container">
+//                         <img class="user-photo" src=${review?.authorAttribution?.photoUri} alt="user photo">
+//                         <div class="user-description">
+//                             <span>${review?.authorAttribution?.displayName}</span>
+//                             <div class="rating-stars">
+//                                 <span class="star">★</span>
+//                                 <span class="star">★</span>
+//                                 <span class="star">★</span>
+//                                 <span class="star">★</span>
+//                                 <span class="star">★</span>
+//                             </div>
+//                             <p>${review?.originalText?.text || "" }</p>
+//                         </div>
+//                     </div>
+  
+//   `;
+// });
