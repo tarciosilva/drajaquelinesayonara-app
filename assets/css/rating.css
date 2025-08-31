@@ -39,7 +39,7 @@
 }
 .user-description p {
   font-size: 1.5rem;
-}
+} 
 
 @media screen and (min-device-width: 1200px) {
   .user-description .rating-stars {

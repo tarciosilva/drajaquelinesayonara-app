@@ -33,3 +33,11 @@ h3 {
 .dark-theme > main section.about-container div section p.about-description {
   color: #fae7eb;
 }
+
+.dark-theme  .user-description {
+  background-color: #3c1e1f;
+}
+
+.dark-theme .user-container > img {
+  border-color: #3c1e1f;
+}

@@ -20,33 +20,31 @@ function toggleNav() {
   }
 }
 
-const body = document.querySelector("body");
-const darkModeButton = document.getElementById("dark-mode-button");
 
-darkModeButton.addEventListener("click", () => {
-  body.classList.toggle("dark-theme");
-})
+const rating = await getData();
+const userContainer = document.getElementById("user-container");
 
-// const rating = await getData();
-// const userContainer = document.getElementById("user-container");
-
-// rating.reviews.map((review) => {
-//   userContainer.innerHTML += `
+rating.reviews.map((review) => {
+  userContainer.innerHTML += `
     
-//                     <div class="user-container">
-//                         <img class="user-photo" src=${review?.authorAttribution?.photoUri} alt="user photo">
-//                         <div class="user-description">
-//                             <span>${review?.authorAttribution?.displayName}</span>
-//                             <div class="rating-stars">
-//                                 <span class="star">★</span>
-//                                 <span class="star">★</span>
-//                                 <span class="star">★</span>
-//                                 <span class="star">★</span>
-//                                 <span class="star">★</span>
-//                             </div>
-//                             <p>${review?.originalText?.text || "" }</p>
-//                         </div>
-//                     </div>
+                    <div class="user-container">
+                        <img class="user-photo" src=${
+                          review?.authorAttribution?.photoUri
+                        } alt="user photo">
+                        <div class="user-description">
+                            <span>${
+                              review?.authorAttribution?.displayName
+                            }</span>
+                            <div class="rating-stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p>${review?.originalText?.text || ""}</p>
+                        </div>
+                    </div>
   
-//   `;
-// });
+  `;
+});

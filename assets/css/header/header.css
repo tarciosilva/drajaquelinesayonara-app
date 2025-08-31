@@ -28,6 +28,7 @@ header {
   gap: 32px;
   margin: 0;
   padding: 0;
+  z-index: 101;
 }
 .header-nav ul li a img {
   height: 20px;

@@ -56,23 +56,6 @@ a {
   margin: 0;
 }
 
-.accssebility-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 96px;
-}
-
-.accssebility-buttons div {
-  display: flex;
-}
-.accssebility-buttons li > button {
-  all: initial;
-}
-.accssebility-buttons li > button img {
-  margin: 0;
-  width: 24px;
-}
-
 @media screen and (min-device-width: 1200px) {
   .offcanva {
     display: none;

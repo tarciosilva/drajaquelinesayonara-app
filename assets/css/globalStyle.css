@@ -12,6 +12,9 @@
   scroll-behavior: smooth;
   scroll-margin-top: 32px;
 }
+html {
+  margin: 0;
+}
 a {
   text-decoration: none;
 }

@@ -1,0 +1,31 @@
+.accssebility-buttons {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  left: 50%;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  position: fixed;
+  translate: -50%;
+  z-index: 100;
+}
+
+.accssebility-buttons div {
+  display: flex;
+}
+.accssebility-buttons li > button {
+  all: initial;
+}
+.accssebility-buttons li > button img {
+  display: none;
+  margin: 0;
+  width: 20px;
+}
+
+@media screen and (min-device-width: 1200px) {
+  .accssebility-buttons {
+    left: calc(100% - 64px);
+  }
+}
