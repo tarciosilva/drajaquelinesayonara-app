@@ -9,10 +9,11 @@
 * {
   color: var(--logo-pallete-velvety-cherry);
   font-family: "Manrope";
+  margin: 0;
   scroll-behavior: smooth;
   scroll-margin-top: 32px;
 }
-html {
+html, body {
   margin: 0;
 }
 a {
