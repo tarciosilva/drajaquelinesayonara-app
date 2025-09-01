@@ -31,6 +31,7 @@ h3 {
 }
 
 .dark-theme > main section.about-container div section p.about-description {
+  background-color: #00000043;
   color: #fae7eb;
 }
 
