@@ -37,7 +37,7 @@ p {
   }
   
   .about-container div section {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
     justify-content: center; 
   }
@@ -46,7 +46,7 @@ p {
     width: 600px;
   }
   .about-container div section p.about-description {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin: 0;
     width: 50%;
   }
