@@ -39,7 +39,69 @@
 }
 .user-description p {
   font-size: 1.5rem;
-} 
+}
+
+.skeleton {
+  align-items: center;
+  animation: fadeCard 4s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+}
+.skeleton > img {
+  background-color: #4b4b4b;
+  border: 4px solid #7d7b7b;
+  border-radius: 50%;
+  margin-bottom: -100px;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+}
+.skeleton > div {
+  
+  background-color: #4b4b4b;
+  border-radius: 8px;
+  height: 200px;
+  width: 100%;
+}
+.skeleton > div .skeleton-name {
+  animation: fadeCard 4s infinite alternate;
+  background-color: #7d7b7b;
+  border-radius: 8px;
+  height: 12px;
+  margin: 116px auto 4px auto;
+  width: 100px;
+}
+.skeleton > div > div .skeleton-stars {
+  animation: fadeCard 4s infinite alternate;
+  background-color: #7d7b7b;
+  border-radius: 8px;
+  height: 12px;
+  margin: 0 auto 4px auto;
+  width: 132px;
+}
+
+.skeleton > div > .skeleton-description {
+  background-color: #7d7b7b;
+  border-radius: 8px;
+  height: 32px;
+  margin: 0 auto 4px auto;
+  width: 90%;
+}
+
+@keyframes fadeCard {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
 
 @media screen and (min-device-width: 1200px) {
   .user-description .rating-stars {
