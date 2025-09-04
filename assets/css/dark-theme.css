@@ -21,7 +21,7 @@ h3 {
   background-color: #0000009a;
 }
 
-.dark-theme > main section.about-container {
+.dark-theme > main section.about-container div section {
   background-image: none;
   background-color: #3c1e1f;
 }

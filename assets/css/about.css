@@ -16,6 +16,7 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 24px;
 }
 .about-container div > h2,
 p {
