@@ -1,4 +1,16 @@
 .rating-container {
+  background-image: linear-gradient(135deg, #fae7eb9b 25%, transparent 25%),
+    linear-gradient(225deg, #fae7eb9b 25%, transparent 25%),
+    linear-gradient(45deg, #fae7eb9b 25%, transparent 25%),
+    linear-gradient(315deg, #fae7eb9b 25%, #fff 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-bottom: 24px;
+}
+
+.users-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -58,7 +70,6 @@
   z-index: 1;
 }
 .skeleton > div {
-  
   background-color: #4b4b4b;
   border-radius: 8px;
   height: 200px;
@@ -95,7 +106,7 @@
   }
 
   50% {
-    opacity: .9;
+    opacity: 0.9;
   }
 
   100% {

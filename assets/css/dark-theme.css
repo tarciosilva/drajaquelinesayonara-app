@@ -21,17 +21,15 @@ h3 {
   background-color: #0000009a;
 }
 
-.dark-theme > main section.about-container div section {
-  background-image: none;
-  background-color: #3c1e1f;
-}
+
 .dark-theme > footer {
   background-image: none;
   background-color: #3c1e1f;
 }
-
+.dark-theme > main section.about-container {
+  background: none;
+}
 .dark-theme > main section.about-container div section p.about-description {
-  background-color: #00000043;
   color: #fae7eb;
 }
 
@@ -41,4 +39,8 @@ h3 {
 
 .dark-theme .user-container > img {
   border-color: #3c1e1f;
+}
+
+.dark-theme .rating-container {
+  background: #3c1e1f;
 }
