@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: Manrope;
+  src: url("/assets/font/Manrope-VariableFont_wght.ttf"), verdana;
+}
+
 :root {
   font-size: 62.5%;
   --logo-pallete-petal-rose: #fae7eb;
@@ -7,18 +12,19 @@
   --logo-pallete--dark: #000;
 }
 * {
-  color: var(--logo-pallete-velvety-cherry);
-  font-family: "Manrope";
+  border: 0;
+  list-style: none;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   scroll-margin-top: 32px;
+  vertical-align: baseline;
 }
-html, body {
-  margin: 0;
+body {
+  color: var(--logo-pallete-velvety-cherry);
+  font-family: "Manrope";
 }
-a {
-  text-decoration: none;
-}
+
 p {
   color: var(--logo-pallete-velvety-cherry);
   font-size: 1.5rem;
