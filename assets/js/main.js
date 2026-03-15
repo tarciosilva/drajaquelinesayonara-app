@@ -20,7 +20,15 @@ function toggleNav() {
   }
 }
 
-const rating = await getData();
+const getRating = async () => {
+  const response = await fetch('/api/get-reviews');
+  const reviews = await response.json();
+  
+  return reviews;
+}
+
+const rating = await getRating();
+
 const userContainer = document.getElementById("user-container");
 
 rating?.reviews
