@@ -33,8 +33,8 @@ console.log(rating);
 
 const userContainer = document.getElementById("user-container");
 
-rating?.reviews
-  ? rating.reviews.map((review) => {
+rating.length > 0
+  ? rating.map((review) => {
       userContainer.innerHTML += `
     
                     <div class="user-container">
