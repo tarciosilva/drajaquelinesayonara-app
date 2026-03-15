@@ -21,7 +21,7 @@ function toggleNav() {
 }
 
 const getRating = async () => {
-  const response = await fetch('/api/get-reviews');
+  const response = await fetch('/api/get-reviews.js');
   const reviews = await response.json();
   
   return reviews;
