@@ -21,11 +21,11 @@ function toggleNav() {
 }
 
 const getRating = async () => {
-  const response = await fetch('/api/get-reviews.js');
+  const response = await fetch("/api/get-reviews.js");
   const reviews = await response.json();
-  
+
   return reviews;
-}
+};
 
 const rating = await getRating();
 
@@ -39,20 +39,18 @@ rating.length > 0
     
                     <div class="user-container">
                         <img class="user-photo" src=${
-                          review?.authorAttribution?.photoUri
+                          review?.profile_photo_url
                         } alt="user photo">
                         <div class="user-description">
-                            <span>${
-                              review?.authorAttribution?.displayName
-                            }</span>
+                            <span>${review?.author_name}</span>
                             <div class="rating-stars">
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
+                                ${[...Array((Number(review.rating))).keys()]
+                                  .map((i) => {
+                                    `<span class="star">★</span>`;
+                                  })
+                                  .join("")}
                             </div>
-                            <p>${review?.originalText?.text || ""}</p>
+                            <p>${review?.text || ""}</p>
                         </div>
                     </div>
   
@@ -71,5 +69,3 @@ rating.length > 0
                         </div>
                     </div>`;
     });
-
-
