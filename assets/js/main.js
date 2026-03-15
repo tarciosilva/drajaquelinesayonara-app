@@ -29,6 +29,8 @@ const getRating = async () => {
 
 const rating = await getRating();
 
+console.log(rating);
+
 const userContainer = document.getElementById("user-container");
 
 rating?.reviews
