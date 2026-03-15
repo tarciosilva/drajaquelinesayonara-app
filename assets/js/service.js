@@ -1,7 +1,8 @@
-const API_KEY = "";
+const apiKey = "AIzaSyDBBBLdU6T0me66qborCmUL7TUjxbl0-C0";
+const placeId = "ChIJG2ynEABZrAcRE0WvmWTIAgk";
 
 async function getData() {
-  const url = `https://places.googleapis.com/v1/places/ChIJG2ynEABZrAcRE0WvmWTIAgk?fields=reviews,displayName&key=${API_KEY}`;
+  const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
