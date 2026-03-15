@@ -1,18 +1,10 @@
-// Example for a Node.js serverless function
-const apiKey = "AIzaSyDBBBLdU6T0me66qborCmUL7TUjxbl0-C0";
-const placeId = "ChIJG2ynEABZrAcRE0WvmWTIAgk";
-
-async function getData() {
+export default async function handler(req, res) {
+  const apiKey = process.env.VITE_GOOGLE_PLACES_API_KEY; // Hidden on the server!
+  const placeId = "ChIJG2ynEABZrAcRE0WvmWTIAgk";
   const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
 
-    const result = await response.json();
-    return result;
-  } catch (error) {
-    console.error(error.message);
-  }
+  const response = await fetch(url);
+  const data = await response.json();
+
+  res.status(200).json(data.result.reviews);
 }
