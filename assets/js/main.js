@@ -46,7 +46,7 @@ rating.length > 0
                             <div class="rating-stars">
                                 ${[...Array((Number(review.rating))).keys()]
                                   .map((i) => {
-                                    `<span class="star">★</span>`;
+                                    '<span class="star">★</span>'
                                   })
                                   .join("")}
                             </div>
