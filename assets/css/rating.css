@@ -49,7 +49,7 @@
   font-weight: 900;
 }
 .user-description p {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .skeleton {
@@ -118,6 +118,6 @@
     font-size: 3rem;
   }
   .user-description p {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
