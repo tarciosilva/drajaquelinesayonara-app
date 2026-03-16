@@ -42,11 +42,11 @@ rating.length > 0
                           review?.profile_photo_url
                         } alt="user photo">
                         <div class="user-description">
-                            <span>${review?.author_name}</span>
+                            <span><strong>${review?.author_name}</strong></span>
                             <div class="rating-stars">
                                 ${[...Array((Number(review.rating))).keys()]
                                   .map((i) => {
-                                    '<span class="star">★</span>'
+                                    return '<span class="star">★</span>'
                                   })
                                   .join("")}
                             </div>
